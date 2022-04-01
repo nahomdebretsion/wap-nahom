@@ -1,0 +1,17 @@
+#container{
+    margin: 0;
+    padding:0 ;
+}
+.header{
+    background-color: rgb(97,180,180);
+margin-left: 20px;
+padding: 20px;
+}
+.right{
+    position: fixed;
+    left: 50%;
+
+}
+.left{
+    
+}
