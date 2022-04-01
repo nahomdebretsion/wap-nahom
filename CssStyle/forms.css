@@ -1,17 +1,119 @@
 #container{
     margin: 0;
-    padding:0 ;
+    padding: 0;
+    width: 40px;
+    height: 400px;
 }
-.header{
+.top{
     background-color: rgb(97,180,180);
-margin-left: 20px;
-padding: 20px;
+     padding-bottom: 40px;
 }
-.right{
-    position: fixed;
+h1{
+    display: inline;
+    margin: 20px;
+    padding: 30px;
+    background-size: 50px;
+}
+h2{
+    border-bottom: 2px solid black;
+}
+h5{
+    display: inline;  
+}
+h4{
+    text-align:left;
+    margin-left:20px ;
+}
+p{
+    display: inline;
+    margin: 50px 50px 300px 50px;
+    padding-left: 20px;
+    padding-bottom: 200px;
+    font-weight: bold ;
+    font-size: 20px;
+}
+.main{
+   
+}
+#right{
+    background-color: rgb(234, 194, 194);
+    position: absolute;
     left: 50%;
+    height: 780px;
+    width: 750px;
+    padding-left: 20px;
+    padding-bottom: 30px;
 
 }
-.left{
+#left{
+    background-color: rgb(234, 194, 194);
+    color: black;
+    width: 750px;
+    height: 760px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+#bottom{
+    background-color: aquamarine;
+    padding :50px;
+
+
+}
+input[type="checkbox"]{
+    display: block;
+    margin-left: 50%;
+
+}
+input[type="submit"]{
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 20px;
+    padding: 10px;
+}
+input[type="reset"]{
+    text-align: center;
+    margin-left: 600px;
+    padding: 10px;
+}
+select[name="selectone"]{
+       
+    padding: 20px;
+}
+input[type="checkbox"]{
+    margin-top: 20px;
+    padding: 20px;
+}
+input[type="text"]{
+    margin-top: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+}
+form[textarea="row"]{
+    margin-top: 20px;
+    padding: 20px;
+}
+.subright{
+    position: absolute;
+    right: 25%;
+    background-color: brown;
+    margin-right: 100px;
+    height: 200px;
+    width: 150px;
+}
+.subleft{
+    position: absolute;
+    left: 75%;
+    background-color: blue;
+    height: 200px;
+    margin-right: 60px;
+    padding-left: 20px;
     
+    width: 150px;
+    text-align: center;
+    line-height: 50px;
+
+}
+.checkboxs{
+    margin-top: 40%;
 }
