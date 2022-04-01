@@ -96,7 +96,7 @@ form[textarea="row"]{
 .subright{
     position: absolute;
     right: 25%;
-    background-color: brown;
+    background-color: rgb(234, 194, 194);
     margin-right: 100px;
     height: 200px;
     width: 150px;
@@ -104,7 +104,7 @@ form[textarea="row"]{
 .subleft{
     position: absolute;
     left: 75%;
-    background-color: blue;
+    background-color:  rgb(234, 194, 194);
     height: 200px;
     margin-right: 60px;
     padding-left: 20px;
