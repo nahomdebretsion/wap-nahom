@@ -28,14 +28,13 @@ h1,h2,h3{
   }
   .sub-intro{
     text-align: center;
-    text-shadow: 10px;
     font-size: 20px;
     padding-right: 500px;
   }
   .summary{
     font-size: 20px;
     font-weight: bolder;
-    padding-left: : 20px;
+    padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -56,9 +55,9 @@ h1,h2,h3{
   padding-top: 0;
 }
 .mih{
-  font-style:optimize;
+  font-style:italic;
   font-size: 20px;
-  font-family:fantasy;
+  font-family:'Courier New', Courier, monospace,serif;
   font-weight: bolder;
   margin-left: 40px;
   padding-top: 20px;
