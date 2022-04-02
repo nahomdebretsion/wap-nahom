@@ -1,12 +1,13 @@
 #container{
     margin: 0;
     padding: 0;
-    width: 40px;
-    height: 400px;
+    width: 100px;
+    height: 100px;
 }
 .top{
     background-color: rgb(97,180,180);
      padding-bottom: 40px;
+     width: 1420px;
 }
 h1{
     display: inline;
@@ -22,7 +23,8 @@ h5{
 }
 h4{
     text-align:left;
-    margin-left:20px ;
+    margin-left:20px;
+    font-size: 20px;
 }
 p{
     display: inline;
@@ -40,7 +42,7 @@ p{
     position: absolute;
     left: 50%;
     height: 780px;
-    width: 750px;
+    width: 650px;
     padding-left: 20px;
     padding-bottom: 30px;
 
@@ -56,12 +58,15 @@ p{
 #bottom{
     background-color: aquamarine;
     padding :50px;
+    width: 1320px;
 
 
 }
 input[type="checkbox"]{
     display: block;
     margin-left: 50%;
+    width: 20px;
+    height: 30px;
 
 }
 input[type="submit"]{
@@ -97,17 +102,19 @@ form[textarea="row"]{
     position: absolute;
     right: 25%;
     background-color: rgb(234, 194, 194);
-    margin-right: 100px;
+    margin-right: 150px;
     height: 200px;
     width: 150px;
+    margin-bottom: 20px;
 }
 .subleft{
     position: absolute;
     left: 75%;
     background-color:  rgb(234, 194, 194);
     height: 200px;
-    margin-right: 60px;
-    padding-left: 20px;
+    margin-right: 70px;
+   
+   
     
     width: 150px;
     text-align: center;
@@ -116,4 +123,11 @@ form[textarea="row"]{
 }
 .checkboxs{
     margin-top: 40%;
+}
+.checks{
+    margin-top: 30px;
+    padding-top: 20px;
+}
+.meals{
+    margin-top: 110px;
 }
