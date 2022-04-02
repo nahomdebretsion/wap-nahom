@@ -66,7 +66,7 @@ input[type="checkbox"]{
     display: block;
     margin-left: 50%;
     width: 20px;
-    height: 30px;
+    height: 40px;
 
 }
 input[type="submit"]{
@@ -125,9 +125,9 @@ form[textarea="row"]{
     margin-top: 40%;
 }
 .checks{
-    margin-top: 30px;
+    margin-top: 40px;
     padding-top: 20px;
 }
 .meals{
-    margin-top: 120px;
+    margin-top: 130px;
 }
