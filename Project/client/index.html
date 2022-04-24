@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Music Player</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.webp" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="assets/css/audio.css" rel="stylesheet">
+  <!-- =======================================================
+  * Template Name: DevFolio - v4.7.1
+  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="index.html">My Music</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
+
+      <nav id="navbar" class="navbar">
+        <ul id="login" >
+          <form method="post" role="form" class="php-email-form">
+            <div class="row">
+                <div class="col-md-5 form-group">
+                  <input type="text" name="username" class="form-control" id="username" placeholder="Username" required>
+                </div>
+                <div class="col-md-5 form-group">
+                  <input type="password" class="form-control" name="password" id="password" placeholder="Password" required>
+                  <label id="error-message" class="hide"></label>
+                </div>
+                <div class="col-md-2 form-group">
+                  <button id="btn-login" type="submit" class="button button-a button-big button-rouded">Login</button>
+                </div>
+            </form>
+        </ul>
+        <ul id="logout">
+          <button id="btn-logout" type="submit" class="button button-a button-big button-rouded" style="background-color: transparent;">Logout</button>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/hero-bg.jpg)">
+    <div class="overlay-itro"></div>
+    <div class="hero-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <div id="login-module">
+            <!--<p class="display-6 color-d">Hello, world!</p>-->
+          <h1 class="hero-title mb-4">my music website</h1>
+          <p class="hero-subtitle"><span class="typed" data-typed-items="Yummy, I don't care, Make it now, Hello"></span></p>
+          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+          </div>
+          <div id="logout-module" style="margin-top: 120px;">
+            <!-- <div id="search-formTT" style=""> -->
+              <form method="post" role="form" id="search-form" class="TTphp-email-form">
+                <div id="div-search" class="row" style="margin-left: 100px;">
+                <div class="col-md-9 form-group">
+                  <input type="text" name="searchval" class="form-control" id="search" placeholder="Search...." required>
+                </div>
+                <div class="col-md-3 form-group">
+                  <button id="search_btn" class="button button-a button-big button-rouded" type="submit">Search</button>
+                </div>
+              </div>
+            </form>
+            <!-- </div> -->
+            <h3 id="interest" style="color: #fff; margin-top: 30px;">Song You May Interest</h3>
+            <h3 id="search-title" class="hide">Result of "<span id="search-data"></span>"</h3>            
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">#Id</th>
+                  <th scope="col">Title</th>
+                  <th scope="col">Artist</th>
+                  <th scope="col">Action</th>
+                </tr>
+              </thead>
+              <tbody id="songList">
+                
+              </tbody>
+            </table>
+
+            <h3 style="color: #fff; margin-top: 50px;">Your Playlist</h3>
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">#Id</th>
+                  <th scope="col">Title</th>
+                  <th scope="col">Artist</th>
+                  <th scope="col">Action</th>
+                </tr>
+              </thead>
+              <tbody id="userPlayList">
+                
+              </tbody>
+            </table>
+
+      
+              <div id="audio-player" class="audio-player" style="margin-bottom: 50px;">
+                  <div id="timeline" class="timeline">
+                      <div class="progress"></div>
+                  </div>
+                  <div class="controls">
+                  
+                      <div class="play-container">
+                          <div class="backward">
+                              <button id="backward-icon" class="audio-btn fa fa-step-backward fa-2x"></button>
+                          </div>
+                          <div class="toggle-play play">
+                              <button id="play-icon" class="audio-btn fa fa-play fa-2x"></button>
+                          </div>
+                          <div class="forward">
+                              <button id="forward-icon" class="audio-btn fa fa-step-forward fa-2x"></button>
+                          </div>
+                      </div>
+                      <div id="song-title">-</div>
+                      <div class="time">
+                          <div class="current">0:00</div>
+                          <div class="divider">/</div>
+                          <div class="length">0:00</div>
+                      </div>
+                      <div class="shuffle">
+                          <button id="shuffle-icon" class="audio-btn fa fa-random fa-2x"></button>
+                      </div>
+                      <div class="volume-container">
+                          <div class="volume-button">
+                              <div class="audio-btn volume fa fa-volume-up fa-2x"></div>
+                          </div>
+                          <div id="volume-slider" class="volume-slider">
+                              <div id="volume-percentage" class="volume-percentage"></div>
+                          </div>
+                      </div>
+          
+                  </div>
+              </div>
+              
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ======= Footer ======= -->
+  <footer style="display: none;">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="copyright-box">
+            <p class="copyright">&copy; Copyright <strong>My Music</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/handelar.js"></script>
+  <script src="assets/js/audio.js"></script>
+
+</body>
+
+</html>
